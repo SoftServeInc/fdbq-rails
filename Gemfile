@@ -16,4 +16,7 @@ gemspec
 
 group(:test) do
   gem 'simplecov', require: false
+  gem 'shoulda-matchers'
+  gem 'rspec-rails', '4.0.0.beta4'
+  gem 'rspec-its'
 end

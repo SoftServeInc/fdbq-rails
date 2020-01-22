@@ -1,0 +1,23 @@
+placement: bottom right
+modal:
+  title: 
+subHeader:
+  title: 
+  description: 
+questions:
+  # -
+  #   name: # [String]
+  #   label: # [String]
+  #   value: # [String]
+  #   placeholder: # [String]
+  #   type: # [String]
+  #   required: # [Boolean]
+  #   hint: # [String]
+  # -
+  #   name: # [String]
+  #   label: # [String]
+  #   value: # [String]
+  #   placeholder: # [String]
+  #   type: # [String]
+  #   required: # [Boolean]
+  #   hint: # [String]

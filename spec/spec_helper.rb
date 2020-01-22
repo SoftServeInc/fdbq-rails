@@ -6,7 +6,9 @@
 #
 require 'simplecov'
 
-SimpleCov.start
+SimpleCov.start do
+  add_filter 'spec/'
+end
 
 # Given that it is always loaded, you are encouraged to keep this file as
 # light-weight as possible. Requiring heavyweight dependencies from this file
@@ -15,7 +17,7 @@ SimpleCov.start
 # a separate helper file that requires the additional dependencies and performs
 # the additional setup, and require it from the spec files that actually need
 # it.
-#
+
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

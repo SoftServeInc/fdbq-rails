@@ -1,5 +1,4 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
-require 'spec_helper'
 
 ENV['RAILS_ENV'] ||= 'test'
 
@@ -10,9 +9,9 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 
 require 'rspec/rails'
 
-# Add additional requires below this line. Rails is not loaded until this point!
+Dir.glob(File.expand_path('../support/rails/**/*.rb', __FILE__)).each { |file| require(file) }
 
-SimpleCov.start 'rails'
+# Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -39,7 +38,7 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
-  config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  config.fixture_path = File.expand_path("../fixtures", __FILE__)
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false

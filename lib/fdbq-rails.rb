@@ -1,0 +1,2 @@
+require "fdbq/rails"
+ 

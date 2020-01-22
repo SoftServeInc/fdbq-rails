@@ -1,4 +1,4 @@
-# Fdbq
+# Fdbq::Rails
 Short description and motivation.
 
 ## Usage
@@ -8,17 +8,13 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fdbq'
+gem 'fdbq-rails'
 ```
 
-And then execute:
+Execute:
 ```bash
 $ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install fdbq
+$ rails g fdbq:install
 ```
 
 ## Contributing
