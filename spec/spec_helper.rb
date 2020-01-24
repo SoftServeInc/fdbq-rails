@@ -6,7 +6,10 @@
 #
 
 require 'rspec/its'
+require 'shoulda-matchers'
 require 'simplecov'
+
+Dir.glob(File.expand_path('../support/*.rb', __FILE__)).each(&method(:require))
 
 SimpleCov.start do
   add_filter 'spec/'

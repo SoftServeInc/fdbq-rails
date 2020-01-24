@@ -9,7 +9,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 
 require 'rspec/rails'
 
-Dir.glob(File.expand_path('../support/rails/**/*.rb', __FILE__)).each { |file| require(file) }
+Dir.glob(File.expand_path('../support/rails/**/*.rb', __FILE__)).each(&method(:require))
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
