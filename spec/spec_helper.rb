@@ -4,11 +4,15 @@
 # this file to always be loaded, without a need to explicitly require it in any
 # files.
 #
+
+require 'rspec/its'
 require 'simplecov'
 
 SimpleCov.start do
   add_filter 'spec/'
 end
+
+require 'fdbq/fdbq'
 
 # Given that it is always loaded, you are encouraged to keep this file as
 # light-weight as possible. Requiring heavyweight dependencies from this file

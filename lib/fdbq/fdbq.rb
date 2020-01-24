@@ -12,4 +12,8 @@ module Fdbq
   def self.configure(&block)
     Plugin.instance.instance_eval(&block)
   end
+
+  def self.current_instance
+    Plugin.instance.settings
+  end
 end

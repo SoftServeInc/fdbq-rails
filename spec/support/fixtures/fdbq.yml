@@ -1,0 +1,23 @@
+placement: bottom right
+modal:
+  title: Please share your thoughts
+subHeader:
+  title: Feedback
+  description: User experiense sharing purpose
+questions:
+  -
+    name: contact_email
+    label: Please share your email for contacts
+    value: 
+    placeholder: your@email.com
+    type: string
+    required: true
+    hint: Please share your email so we could reply
+  -
+    name: usage
+    label: How useful You find our web-site is?
+    value: 
+    placeholder: Type here
+    type: text
+    required: false
+    hint: Please share your experiense on our web-site
