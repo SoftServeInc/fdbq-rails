@@ -2,6 +2,7 @@ require 'jbuilder'
 
 require "fdbq/fdbq"
 require "fdbq/rails/engine"
+require 'fdbq/rails/helpers'
 
 module Fdbq
   module Rails
@@ -25,4 +26,16 @@ module Fdbq
       ::Rails.version.to_i >= 5
     end
   end
+end
+
+ActionController::Helpers.class_eval do
+  include Fdbq::Rails::Helpers
+end
+
+ActionController::Base.class_eval do
+  include Fdbq::Rails::Helpers
+end
+
+ActionView::Helpers.class_eval do
+  include Fdbq::Rails::Helpers
 end

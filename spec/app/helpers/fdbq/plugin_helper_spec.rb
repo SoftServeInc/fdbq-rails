@@ -22,4 +22,14 @@ RSpec.describe Fdbq::PluginHelper, type: :helper do
       end
     end
   end
+
+  describe '#fdbq_responses' do
+    let(:fields) { [{fields: { 'contact_email' => 'test1@mail.com'} }, { fields: { 'contact_email' => 'test2@mail.com' } }] }
+    let(:list) { fields.map(&Fdbq::Feedback.method(:create!)) }
+
+    subject { helper.fdbq_responses }
+
+    it { is_expected.to contain_exactly(*list) }
+    its(:klass) { is_expected.to eq(Fdbq::Feedback) }
+  end
 end
