@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Fdbq::FeedbackController, type: :controller do
+  routes { Fdbq::Rails::Engine.routes }
+
   describe 'POST #create' do
     context 'format JSON' do
       context 'with no feedback param' do

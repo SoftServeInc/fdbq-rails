@@ -1,3 +1,3 @@
-Rails.application.routes.draw do
-  resource :feedback, only: :create, controller: 'fdbq/feedback'
-end
+Fdbq::Rails::Engine.routes.draw do
+  resource :feedback, only: :create, controller: 'feedback'
+end 

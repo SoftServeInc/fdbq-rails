@@ -27,11 +27,3 @@ module Fdbq
     end
   end
 end
-
-ActionController::Base.class_eval do
-  include Fdbq::Rails::Helpers
-end
-
-ActionView::Base.class_eval do
-  include Fdbq::Rails::Helpers
-end

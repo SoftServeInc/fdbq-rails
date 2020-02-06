@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Fdbq::PluginHelper, type: :helper do
+RSpec.describe ApplicationHelper, type: :helper do
   describe '#fdbq_render' do
     let(:settings) { Fdbq.current_instance }
 

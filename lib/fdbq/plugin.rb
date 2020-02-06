@@ -26,6 +26,8 @@ module Fdbq
     def settings
       config.tap do |c|
         c['questions']&.map! { |el| el.merge('name' => build_param_key(el['name'])) }
+
+        c['submit'] = { url: Rails::Engine.routes.url_helpers.feedback_path }
       end
     end
 

@@ -1,5 +1,7 @@
 module Fdbq
   class FeedbackController < Fdbq::Rails.controller_parent.constantize
+    skip_before_action :verify_authenticity_token, only: :create
+
     def create
       @feedback = Fdbq::Feedback.new(fields: permitted_params.to_h)
       @feedback.save
