@@ -1,1 +1,1 @@
-//= require vendor/assets/javascripts/@softserveopensource/fdbq
+//= require @softserveopensource/fdbq
