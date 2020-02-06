@@ -1,0 +1,228 @@
+
+.fdbq-modal-overlay {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: scroll;
+  display: none;
+}
+
+.fdbq-modal-overlay.show {
+  display: block;
+}
+
+.fdbq-modal {
+  width: 40%;
+  margin: 40px auto;
+  background-color: #ffffff;
+}
+
+.fdbq-modal .fdbq-modal-head {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  background-color: #000000;
+}
+
+.fdbq-modal .fdbq-modal-head h4 {
+  width: 100%;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.fdbq-modal .fdbq-modal-head .close {
+  padding: 0 10px;
+  margin: 0 5px 0 0;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 33px;
+  line-height: 100%;
+}
+
+.fdbq-modal .fdbq-modal-head .close:focus {
+  outline: none;
+}
+
+.fdbq-modal .fdbq-modal-head .close:hover {
+  cursor: pointer;
+}
+
+.fdbq-modal .fdbq-modal-body {
+  padding: 30px 15px;
+}
+
+.fdbq-modal .fdbq-modal-body .fdbq-modal-actions {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.fdbq-modal .fdbq-modal-body .fdbq-modal-heading {
+  margin-bottom: 30px;
+}
+
+.fdbq-modal .fdbq-modal-body .fdbq-modal-heading h5 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fdbq-modal .fdbq-modal-body .fdbq-modal-heading .sub-heading-description {
+  padding-top: 10px;
+  color: #000000;
+}
+
+.fdbq-modal .fdbq-modal-body .fdbq-modal-heading h5:after {
+  display: block;
+  margin-top: 10px;
+  content: "";
+  width: 23%;
+  height: 2px;
+  background-color: #000000;
+}
+
+.fdbq-modal .fdbq-modal-body .fdbq-modal-actions .submit {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  font-weight: bold;
+}
+
+.fdbq-modal .fdbq-modal-body .fdbq-modal-actions .submit:hover,
+.fdbq-modal .fdbq-modal-body .fdbq-modal-actions .submit:focus {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+
+.fdbq-modal .fdbq-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.fdbq-modal .fdbq-field abbr {
+  color: red;
+  padding-right: 3px;
+}
+
+.fdbq-modal .fdbq-field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #909090;
+  font-weight: bold;
+}
+
+.fdbq-modal .fdbq-field.has-errors label {
+  color: red !important;
+}
+
+.fdbq-modal .fdbq-field.has-errors .fdbq-input {
+  border-color: red !important;
+}
+
+.fdbq-modal .fdbq-field .fdbq-input {
+  padding: 15px;
+  border: none;
+  display: flex;
+  border: 2px solid #000000;
+  font-size: 14px;
+  color: #000000;
+  line-height: 15px;
+}
+
+.fdbq-modal .fdbq-field .fdbq-input:focus {
+  outline: none;
+}
+
+.fdbq-modal .fdbq-field + .fdbq-field {
+  margin-top: 15px;
+}
+
+.fdbq-modal .fdbq-field .fdbq-field-hint {
+  padding-top: 5px;
+  font-size: 14px;
+  color: #909090;
+}
+
+.fdbq-toggle {
+  padding: 5px;
+  margin: 0;
+  background-color: #000000;
+  border: none;
+}
+
+.fdbq-toggle:hover, .fdbq-toggle:focus {
+  cursor: pointer;
+  outline: none;
+  background-color: #303030;
+  transition: background-color .5s;
+}
+
+.fdbq-toggle .fdbq-icon-action {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: url("data:image/png;base64,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") center top no-repeat;
+  background-size: contain;
+}
+
+.fdbq-toggle.bottom {
+  position: fixed;
+  bottom: 5%;  
+}
+
+.fdbq-toggle.top {
+  position: fixed;
+  top: 5%;
+}
+
+.fdbq-toggle.center {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.fdbq-toggle.middle {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.fdbq-toggle.right {
+  position: fixed;
+  right: 5%;
+}
+
+.fdbq-toggle.left {
+  position: fixed;
+  left: 5%;
+}
+
+
+.fdbq-toggle.right.bottom,
+.fdbq-toggle.left.bottom  {
+  position: fixed;
+  bottom: 5%;
+}
+
+.fdbq-toggle.right.top,
+.fdbq-toggle.left.top  {
+  top: 5%;
+  position: fixed;
+}
