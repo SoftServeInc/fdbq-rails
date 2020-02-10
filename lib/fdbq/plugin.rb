@@ -9,6 +9,8 @@ module Fdbq
 
     attr_accessor :config_file_path
     attr_accessor :param_key
+    attr_accessor :controller_extensions
+    attr_accessor :model_extensions
 
     include ::Singleton
 

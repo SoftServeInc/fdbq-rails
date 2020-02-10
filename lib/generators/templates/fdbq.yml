@@ -1,4 +1,5 @@
 placement: bottom right
+appearance: fade
 modal:
   title: 
 subHeader:

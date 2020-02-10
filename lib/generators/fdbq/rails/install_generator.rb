@@ -31,6 +31,10 @@ module Fdbq
         def copy_initializer
           template "fdbq.rb", "config/initializers/fdbq.rb"
         end
+
+        def copy_locales
+          template "fdbq.en.yml", "config/locales/fdbq.en.yml"
+        end
       end
     end
   end

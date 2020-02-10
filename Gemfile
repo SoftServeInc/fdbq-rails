@@ -19,4 +19,6 @@ group(:test) do
   gem 'shoulda-matchers'
   gem 'rspec-rails', '4.0.0.beta4'
   gem 'rspec-its'
+  gem 'pry'
+  gem 'pry-rails'
 end

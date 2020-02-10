@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2020_01_22_192639) do
 
   create_table "fdbq_feedback", force: :cascade do |t|
     t.text "fields"
+    t.string "log"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

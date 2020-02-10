@@ -7,6 +7,8 @@ module Fdbq
 
     validate :required_fields
 
+    self.instance_eval(&Fdbq::Plugin.instance.model_extensions) if Fdbq::Plugin.instance.model_extensions
+
     private
 
     def required_fields
