@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@softserveopensource/fdbq": "v0.1.1"
+    "@softserveopensource/fdbq": "^0.1.2"
   }
 }

@@ -1,6 +1,6 @@
 # Fdbq::Rails
 
-A Rails integration of <TBD> with an ORM recording of submits.
+A Rails integration of [@softserveopensource/fdbq](https://www.npmjs.com/package/@softserveopensource/fdbq) with an ORM recording of submits.
 
 ## Installation
 
@@ -25,7 +25,6 @@ Update configuration for fton-end
 
 ## Usage
 
-
 Aadd to your layout or view plugin
 + `fdbq_render`
 
@@ -42,7 +41,6 @@ or
 
 ## TODO
 
-- [ ] Add JS plugin
 - [ ] Add MongoDB support
 
 ## License
