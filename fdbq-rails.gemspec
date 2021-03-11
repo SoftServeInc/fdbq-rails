@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,config,db,lib,vendor/node_modules}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  spec.add_dependency "rails", "~> 6.0.2", ">= 3"
+  spec.add_dependency "rails", ">= 3"
   spec.add_dependency "jbuilder"
 
   spec.add_development_dependency "sqlite3"
