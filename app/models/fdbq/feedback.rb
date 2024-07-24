@@ -4,7 +4,6 @@ module Fdbq
 
     serialize :fields, coder: YAML, type: Hash
 
-
     validate :required_fields
 
     self.instance_eval(&Fdbq::Plugin.instance.model_extensions) if Fdbq::Plugin.instance.model_extensions
