@@ -2,8 +2,7 @@ module Fdbq
   class Feedback < Rails.model_parent.constantize
     self.table_name = "fdbq_feedback"
 
-    serialize :fields, Hash
-
+    serialize :fields, coder: YAML, type: Hash
 
     validate :required_fields
 
